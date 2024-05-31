@@ -51,6 +51,10 @@ conn.sync({ force: true })
   });
 
   
+app.get("/", (req, res)=>{
+res.send("Funciona")
+})
+
 
 app.use('/', router);
 
